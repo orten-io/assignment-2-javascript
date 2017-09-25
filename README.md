@@ -38,14 +38,14 @@ document.getElementById('plus').onclick = function () {
 
 Create an input where the user can input things they like. When the user adds an item, add it to an array and use
   [`.sort()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) to sort it
-  alphabetically. Then use `.join(' and ')` to `console.log` the message like `"You like: Thing A and thing B and thing C"`
+  alphabetically. Then use `.join(' and ')` to `console.log` a message like `"You like: Thing A and thing B and thing C"`
   and so on every time they add an item.
 
 ## 3. Car and speed limits
 
 Create an object called `car` that has the properties `brand` and `maxSpeed`. It should also have the property `gas`, which
   should be a function that takes the parameter `speed`. That function should `console.log` the message "Broom, a `<brand>` moving forward
-  at `<speed>` kmph". However, a car can move faster than it's maxSpeed, so check `if (speed > maxSpeed) {` ("if speed is more than maxSpeed").
+  at `<speed>` kmph". However, a car can't move faster than it's maxSpeed, so check `if (speed > maxSpeed) {` ("if speed is more than maxSpeed").
   If that's the case, `console.log` "Sorry, a `<brand>` cant go that fast" instead. You can access `maxSpeed` and `brand` by using
   `this.maxSpeed` and `this.brand` inside the `gas` function.
 
